@@ -7,5 +7,3 @@
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="CharacterBody2D"]
-
-[node name="ResourcePreloader" type="ResourcePreloader" parent="CharacterBody2D/AnimatableBody2D"]
