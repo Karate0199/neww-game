@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c0ygqwny0lrq4"]
+[gd_scene load_steps=6 format=3 uid="uid://c0ygqwny0lrq4"]
 
 [ext_resource type="MeshLibrary" uid="uid://dyswelelca1ie" path="res://scenes/levels/1.tres" id="1_jc8nm"]
+[ext_resource type="PackedScene" uid="uid://b2tj56lfae6vl" path="res://character/character_body_3d.tscn" id="2_j8ksp"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_745le"]
 
@@ -22,11 +23,11 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 2, 0)
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.00506957, 0.284718, -0.958598, 0.00150572, 0.958611, 0.284714, 0.999986, 9.8953e-10, -0.00528845, -17.7094, 10.3147, -0.000657861)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_r5dil")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.999996, -0.00151896, 0.00234997, -0.00239471, -0.030151, 0.999542, -0.00144741, -0.999544, -0.0301545, 0.0309449, 16.2911, 0.00236192)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_j8ksp")]
+transform = Transform3D(0.999998, 0.0018995, -0.000438347, -0.00189955, 0.999998, -0.000144149, 0.000438071, 0.000144982, 1, 1.40198, 4.59353, 1.92465)
